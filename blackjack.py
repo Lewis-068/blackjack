@@ -158,3 +158,5 @@ def show_blackjack():
     rate = (((win - blackjack) + 1.5 * blackjack + push/2) / match2) * 100
   st.write(f"현재 승률:{rate: .2f}% ({match}전 {win}승 {push}무 {lose}패) // 블랙잭: {blackjack}회, 서렌더: {surrender}회")
   st.caption("이 페이지를 나가면 승률이 초기화됩니다.")
+
+show_blackjack()
