@@ -13,7 +13,7 @@ if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
   del st.session_state['rate']
 
 text, _, button = st.columns([2, 7, 2])
-  with text:
+with text:
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):
       elif code.lower() == "general":
