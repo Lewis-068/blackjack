@@ -5,11 +5,11 @@ st.set_page_config(page_title="Blackjack")
 
 if 'page' not in st.session_state:
   st.session_state['page'] = 'main'
-if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:
+if st.session_state['page'] == 'main' and 'dealer' in st.session_state:
   del st.session_state['dealer']
-if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
+if st.session_state['page'] == 'main' and 'player' in st.session_state:
   del st.session_state['player']
-if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
+if st.session_state['page'] == 'main' and 'rate' in st.session_state:
   del st.session_state['rate']
 
 def show_main_page():
