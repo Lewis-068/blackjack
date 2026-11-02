@@ -533,7 +533,7 @@ def show_blackjack3():
     st.caption("버스트되지 않는 한, 딜러의 A 카드는 11로 계산합니다.")
     st.write("5. 서렌더(Surrender)는 플레이어가 딜링 단계일 때만 가능합니다.")
     st.caption("서렌더는 최종 승률 계산에서 0.5회 패배로 간주합니다.")
-  deck =  ['A', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
+  deck =  ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
   if 'dealer' not in st.session_state:
     st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
   if 'player' not in st.session_state:
