@@ -1,5 +1,5 @@
 import streamlit as st
-impoer random
+import random
 
 
 def show_blackjack():
