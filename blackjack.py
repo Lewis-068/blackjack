@@ -16,7 +16,7 @@ text, _, button = st.columns([2, 7, 2])
 with text:
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):
-      elif code.lower() == "general":
+      if code.lower() == "general":
         st.session_state['page'] = 'blackjack0'
       elif code.lower() == "KDHBYD":
         st.session_state['page'] = 'blackjack1'
