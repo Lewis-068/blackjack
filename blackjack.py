@@ -12,22 +12,23 @@ if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
 if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
   del st.session_state['rate']
 
-text, _, button = st.columns([2, 7, 2])
-with text:
-    code = st.text_input("secret code: ")
-    if st.button("코드 확인"):
-      if code.lower() == "general":
-        st.session_state['page'] = 'blackjack0'
-      elif code.lower() == "KDHBYD":
-        st.session_state['page'] = 'blackjack1'
-      elif code.lower() == "DUVGEG":
-        st.session_state['page'] = 'blackjack2'
-      elif code.lower() == "VTQFVS":
-        st.session_state['page'] = 'blackjack3'
-      elif code == "":
-        st.toast("코드를 입력해주세요.")
-      else:
-        st.toast("코드가 올바르지 않습니다.")
+def show_main_page():
+  text, _, button = st.columns([2, 7, 2])
+  with text:
+      code = st.text_input("secret code: ")
+      if st.button("코드 확인"):
+        if code.lower() == "general":
+          st.session_state['page'] = 'blackjack0'
+        elif code.lower() == "KDHBYD":
+          st.session_state['page'] = 'blackjack1'
+        elif code.lower() == "DUVGEG":
+          st.session_state['page'] = 'blackjack2'
+        elif code.lower() == "VTQFVS":
+          st.session_state['page'] = 'blackjack3'
+        elif code == "":
+          st.toast("코드를 입력해주세요.")
+        else:
+          st.toast("코드가 올바르지 않습니다.")
 
 def show_blackjack0():
   st.title("블랙잭")
