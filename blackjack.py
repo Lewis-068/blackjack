@@ -515,7 +515,7 @@ def show_blackjack2():
   st.caption("이 페이지를 나가면 승률이 초기화됩니다.")
   st.caption("등록 플레이어: 최민상 / 코드번호: 4377843")
 
-def show_blackjack2():
+def show_blackjack3():
   st.title("블랙잭")
   st.write("가진 카드의 합이 21을 넘지 않으면서 딜러보다 21에 더 가까이 만들면 승리하는 게임입니다.")
   st.caption("개발자가 코딩하기 귀찮은 관계로 간소화된 룰을 적용합니다.")
