@@ -19,11 +19,11 @@ def show_main_page():
       if st.button("코드 확인"):
         if code.lower() == "general":
           st.session_state['page'] = 'blackjack0'
-        elif code.lower() == "KDHBYD":
+        elif code.upper() == "KDHBYD":
           st.session_state['page'] = 'blackjack1'
-        elif code.lower() == "DUVGEG":
+        elif code.upper() == "DUVGEG":
           st.session_state['page'] = 'blackjack2'
-        elif code.lower() == "VTQFVS":
+        elif code.upper() == "VTQFVS":
           st.session_state['page'] = 'blackjack3'
         elif code == "":
           st.toast("코드를 입력해주세요.")
